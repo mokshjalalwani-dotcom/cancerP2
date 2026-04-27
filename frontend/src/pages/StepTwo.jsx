@@ -98,7 +98,16 @@ const StepTwo = () => {
               
               {/* Upload Area - The Primary Action */}
               <div className="field-wrapper">
-                <label className="field-label" style={{ marginBottom: '0.5rem' }}>Molecular Diagnosis Report (PDF)</label>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                  <label className="field-label" style={{ marginBottom: 0 }}>Molecular Diagnosis Report (PDF)</label>
+                  <a 
+                    href="/sample_report.pdf" 
+                    download="sample_report.pdf"
+                    style={{ fontSize: '0.625rem', color: 'var(--accent-light)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.25rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}
+                  >
+                    <FileText size={12} /> Download Sample
+                  </a>
+                </div>
                 <div style={{ position: 'relative', height: '120px' }}>
                   <input 
                     type="file" 
